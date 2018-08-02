@@ -1,0 +1,21 @@
+name: hello_world
+description: A new Flutter project.
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cloud_firestore: ^0.7.4
+
+  cupertino_icons: ^0.1.2
+  http: ^0.11.3+16
+  
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+   
+
+flutter:
+uses-material-design: true
+
+
