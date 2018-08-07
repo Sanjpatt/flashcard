@@ -1,0 +1,35 @@
+import 'package:flutter/material.dart';
+import './flashcard.dart';
+
+class AppDrawer extends StatefulWidget {
+  @override
+  _AppDrawerState createState() => _AppDrawerState();
+}
+
+class _AppDrawerState extends State<AppDrawer> {
+  @override
+  Widget build(BuildContext context) {
+    return Drawer(
+        child: ListView(
+        children: <Widget>[
+        ListTile(
+          title: Text('AP Psych'),
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => FlashCards()),
+            );
+          },
+        ),
+         RaisedButton(
+          child: const Text('Back'),
+          onPressed:(){ 
+            Navigator.pop(context);
+          },
+        )
+        
+      ],
+    )
+    );
+  }
+}
